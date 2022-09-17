@@ -115,12 +115,6 @@
                 },
                 isExpected: true,
             },
-            // 阅读进度
-            // progress: {
-            //     position: "top",
-            //     color: "var(--theme-color,#42b983)",
-            //     height: "3px",
-            // },
             // 标题自动编号
             autoHeaders: {
                 separator: 'decimal',
@@ -129,7 +123,7 @@
                     finish: '6',
                 },
                 scope:     '#main',
-                debug:     true,
+                debug:     false,
             },
             loadSidebar: true,
             subMaxLevel: 5,
@@ -166,7 +160,6 @@
             plugins: [
                 function(hook) {
                     var footer = [
-                        // '<hr/>',
                         '<footer>',
                         '<p style="text-align: right;">Copyright &copy; 2022 MLi. All Rights Reserved. Published with <a href="https://github.com/docsifyjs/docsify" target="_blank">docsify</a>.</p>',
                         '</footer>'
@@ -178,11 +171,6 @@
             ],
             // 分页
             pagination: {
-                // previousText: '上一章节',
-                // nextText: {
-                    // '/en/': 'NEXT',
-                    // '/': '下一章节'
-                // },
                 crossChapter: true,
                 crossChapterText: true,
             },
